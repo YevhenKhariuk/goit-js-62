@@ -38,3 +38,111 @@
 // console.log(makeMessage('Scanner', 3500));
 // console.log(makeMessage('Reactor', 8000));
 // console.log(makeMessage('Engine', 4070));
+
+// // 12
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+//   const message = `You ordered droids worth ${
+//     orderedQuantity * pricePerDroid + deliveryFee
+//   } credits. Delivery (${deliveryFee} credits) is included in total price.`;
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeOrderMessage(2, 100, 50));
+// console.log(makeOrderMessage(4, 300, 100));
+// console.log(makeOrderMessage(10, 70, 200));
+
+// // 16
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered >= available) {
+//     message = "Not enough goods in stock!";
+//   } else {
+//     message = "Order is processed, our manager will contact you.";
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+
+// // 18
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   const balanceCredits = customerCredits - totalPrice;
+//   if (totalPrice > customerCredits) {
+//     message = "Insufficient funds!";
+//   } else {
+//     message = `You ordered ${orderedQuantity} droids, you have ${balanceCredits} credits left`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeTransaction(3000, 5, 23000));
+// console.log(makeTransaction(500, 10, 5000));
+
+// // var2
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   const balanceCredits = customerCredits - totalPrice;
+//   if (totalPrice > customerCredits) {
+//     message = "Insufficient funds!";
+//   } else {
+//     message = `You ordered ${orderedQuantity} droids, you have ${
+//       customerCredits - totalPrice
+//     } credits left`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeTransaction(3000, 5, 23000));
+// console.log(makeTransaction(500, 10, 5000));
+
+// // 19
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   if (password === null) {
+//     // Change this line
+//     message = "Canceled by user!";
+//   } else if (password === ADMIN_PASSWORD) {
+//     // Change this line
+//     message = "Welcome!";
+//   } else {
+//     message = "Access denied, wrong password!";
+//   }
+//   return message;
+// }
+
+// // 20
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered === 0) {
+//     message = "There are no products in the order!";
+//   } else if (ordered > available) {
+//     message = "Your order is too large, there are not enough items in stock!";
+//   } else {
+//     message = "The order is accepted, our manager will contact you";
+//   }
+//   // Change code above this line
+//   return message;
+// }
+
+// // 21
+// function isNumberInRange(start, end, number) {
+//   const isInRange = start <= number && number <= end; // Change this line
+
+//   return isInRange;
+// }
+
+// // 22
+// function checkIfCanAccessContent(subType) {
+//   const canAccessContent = subType === "pro" || subType === "vip"; // Change this line
+
+//   return canAccessContent;
+// }
