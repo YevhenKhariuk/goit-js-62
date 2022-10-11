@@ -255,3 +255,13 @@
 // console.log(courseTopicLength);
 // console.log(firstElement);
 // console.log(lastElement);
+
+// // 36
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   message = message.toLowerCase();
+//   result = message.includes(`spam`) || message.includes(`sale`);
+//   // Change code above this line
+//   return result;
+// }
